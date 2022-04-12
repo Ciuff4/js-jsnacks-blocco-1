@@ -6,19 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jsnack1</title>
 </head>
+<style>
+    body{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        background-color: floralwhite;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-color: #e9967a8c;
+        border-radius: 20px;
+        min-height: 150px;
+        width: 80%;
+    }
+    .box{
+        padding: 0 10px;
+        border-radius: 10px;
+        background-color: #20b2aa91;
+    }
+</style>
 <body>
-    <div>
-        <div class="frst-player">
-            <p>First Player</p>
-            <p class="number-one"></p>
+    <div class="container">
+        <div class="box frst-player">
+            <p>First Player Score:</p>
+            <p id="number-one"></p>
         </div>
-        <div class="the-winner">
+        <div class=" box the-winner">
             <p>The Winner is:</p>
             <p id="winner"></p>
         </div>
-        <div class="scnd-player">
-            <p>Second Player</p>
-            <p class="number-two"></p>
+        <div class="box scnd-player">
+            <p>Second Player Score:</p>
+            <p id="number-two"></p>
         </div>
     </div>
     

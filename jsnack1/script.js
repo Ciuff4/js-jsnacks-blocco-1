@@ -41,3 +41,5 @@ if(numbTwo===numbOne){
     console.log("First Player wins");
 }
 
+document.getElementById("number-one").innerHTML=`${numbOne}`;
+document.getElementById("number-two").innerHTML=`${numbTwo}`;
