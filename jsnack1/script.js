@@ -31,18 +31,13 @@ while (!(secondCorrectNumber)) {
 }
 
 if(numbTwo===numbOne){
-    console.log("it's a Tie!!")
+    document.getElementById("winner").innerHTML="it's a Tie!!";
+    console.log("it's a Tie!!");
 }else if(numbOne<numbTwo){
-    console.log("Second Player wins")
+    document.getElementById("winner").innerHTML="second wins";
+    console.log("Second Player wins");
 }else{
-    console.log("First Player wins")
+    document.getElementById("winner").innerHTML="first wins";
+    console.log("First Player wins");
 }
 
-
-
-// If (numbOne < numbTwo);{
-//     console.log("Second Player is the Winner!!");
-// }elseif (numbOne > numbTwo);{
-//     console.log("First Player is the Winner!!");
-// }els(numbOne=nule.log("It's a Tie !!");
-// }
