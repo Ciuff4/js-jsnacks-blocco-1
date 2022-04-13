@@ -6,15 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jsnack2</title>
 </head>
+<style>
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        height: 200px;
+        background-color: rgba(60, 179, 114, 0.552);
+        color: white;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .box{
+        background-color: rgba(85, 107, 47, 0.684);
+        border-radius: 10px;
+        text-align: center;
+    }
+</style>
 <body>
     <div class="container">
-        <div id="first-word">
+
+        <div id="first-word" class="box">
         </div>
-        <div id="longest-word">
-            <p>The longest word you wrote is:</p>
+
+        <div id="second-word" class="box">
         </div>
-        <div id="second-word">
+
+        <div id="longest-word" class="box">
         </div>
+
+        <div id="shortest-word" class="box">
+        </div>
+
     </div>
 
     <script src="script.js"></script>
