@@ -5,11 +5,6 @@
  Esegui questo programma in due versioni, con il for e con il while (facoltativo)
 */
 
-// let secondNumber= parsint(prompt("Insert a number:"));
-// let thirdNumber= parsint(prompt("Insert a number:"));
-// let fourthNumber= parsint(prompt("Insert a number:"));
-// let fifthNumber= parsint(prompt("Insert a number:"));
-
 
 const arrNumbers=[];
 
@@ -22,12 +17,4 @@ for(let i=0; arrNumbers.length<5; i++){
     console.log(sum);
 }
 
-
-// firstNumber
-
-// let i=false
-// while ((arrNumbers.length<5)){
-//     firstNumber= parsint(prompt("Insert a number:"));
-//     alert("")
-//     i=true
-// }
+let message =document.getElementById(output).innerHTML+= `${sum}`;
