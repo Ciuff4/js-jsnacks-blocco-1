@@ -7,14 +7,16 @@
 
 
 const arrNumbers=[];
+let sum;
 
 for(let i=0; arrNumbers.length<5; i++){
     let number= parseInt(prompt("Insert a number:"));
     arrNumbers.push(number);
     console.log(arrNumbers);
-    let sum;
     sum = arrNumbers.reduce((a, b) => a + b, 0);
     console.log(sum);
 }
 
-let message =document.getElementById(output).innerHTML+= `${sum}`;
+let message =document.getElementById(output);
+
+document.innerHTML+=``;

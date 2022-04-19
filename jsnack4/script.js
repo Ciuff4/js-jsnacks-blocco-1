@@ -8,25 +8,16 @@ const invitati=["Marco", "Luca", "Martina", "Sofia"];
 
 let nome= prompt("Are you invited to the party? Let's find out: Insert your name:");
 
-let message= document.getElementById("output");
-
-let flag=0;
+let message;
 
 for(let i=0; i<invitati.length; i++){
 
+if(invitati.includes(nome)){
+    message=`Congratulations ${nome}! you are invited!`;
+}else{
+    message=`We are sorry ${nome} ! you are not invited!`
+}
+}
 
-if(nome===invitati[i]){
-    flag=0;
-    message= document.innerHTML+=`
-        <h1>
-            Congratulations ${nome}! you are invited!
-        </h1>`;
-}else((!nome===invitati[i]));{
-    flag=1;
-    message= document.innerHTML+=`
-        <h1>
-            We are sorry ${nome} ! you are not invited!
-        </h1>`
-}
-}
+document.getElementById("output").innerHTML=message
 console.log(message);
