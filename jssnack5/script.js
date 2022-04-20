@@ -14,8 +14,9 @@ for(let i=0; i < limit; i++){
     number= parseInt(prompt("insert a number:"));
 
     if(number % 2){
-        array.push(number)
+        array.push(number);
         console.log(array);
     }
 }
 
+const message= document.querySelector("h1").innerHTML=`the odd number are: ${array}`;
