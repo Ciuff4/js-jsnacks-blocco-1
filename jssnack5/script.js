@@ -6,8 +6,16 @@
 */
 
 const array=[];
-let number= parseInt(prompt("insert a number:"));
+let number;
 
 const limit=6;
 
-for(let i=0; number[i<limit])
+for(let i=0; i < limit; i++){
+    number= parseInt(prompt("insert a number:"));
+
+    if(number % 2){
+        array.push(number)
+        console.log(array);
+    }
+}
+
